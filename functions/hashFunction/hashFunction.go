@@ -6,7 +6,6 @@ import (
 	"crypto/sha256"
 	"encoding"
 	"fmt"
-	"bytes"
 	"log"
 	"hash"
 )
