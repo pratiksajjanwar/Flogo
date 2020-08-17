@@ -1,0 +1,27 @@
+{
+"name":"hashFunction",
+"type":"flogo:function",
+"version":"0.0.1",
+"title":"hashFunction",
+"description":"Custom hash function",
+"functions":[
+	{
+		"name":"hashFunction",
+		"description":"Generate sha256 hash value",
+		"example":"hashFunction(example1,example2)\n Returns a string containing hash value",
+		"args":[{"name": "example1",
+                 "type": "string",
+                 "valueType": "string"
+				},
+				{"name": "example2",
+                 "type": "string",
+                 "valueType": "string"
+				}
+		],
+		"return":{"type": "string",
+                 "valueType": "string"}
+				},
+		"display":{"visible":true}
+		}
+	]
+}
