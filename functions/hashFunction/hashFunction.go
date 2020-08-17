@@ -61,5 +61,6 @@ func (s *hashFunction) Eval(params ...interface{}) (interface{}, error) {
 	secondHash.Write([]byte(example2))
 	fmt.Printf("%x\n", firstHash.Sum(nil))
 	fmt.Println(bytes.Equal(firstHash.Sum(nil), secondHash.Sum(nil)))
-	return firstHash.Sum(nil),nil
+	var hash := firstHash.Sum(nil)
+	return hash,nil
 }
