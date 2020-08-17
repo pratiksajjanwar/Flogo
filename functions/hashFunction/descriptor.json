@@ -19,7 +19,9 @@
 				}
 		],
 		"return":{"type": "string",
-                 "valueType": "string"}
+                 "valueType": "string"},
+		"display":{"visible":true
+			}
 				
 		}
 	]
