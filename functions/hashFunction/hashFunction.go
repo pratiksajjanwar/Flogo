@@ -9,6 +9,7 @@ import (
 	"bytes"
 	"log"
 	"hash"
+	"encoding/hex"
 )
 
 func init() {
@@ -64,5 +65,5 @@ func (s *hashFunction) Eval(params ...interface{}) (interface{}, error) {
 	fmt.Printf("%x\n",hash)
 	str1 := bytes.NewBuffer(firstHash.Sum(nil)).String()
 	fmt.Printf("%x\n",str1)
-	return str1,nil
+	return hex.EncodeToString(firstHash.Sum(nil)),nil
 }
