@@ -20,8 +20,7 @@
 		],
 		"return":{"type": "string",
                  "valueType": "string"}
-				},
-		"display":{"visible":true}
+				
 		}
 	]
 }
