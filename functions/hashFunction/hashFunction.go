@@ -23,13 +23,13 @@ func (s *hashFunction) Name() string {
 }
 
 func (s *hashFunction) Sig() (paramTypes []data.Type, isVariadic bool) {
-	return []data.Type{data.TypeString,data.TypeString}, true
+	return []data.Type{data.TypeString}, true
 }
 
 func (s *hashFunction) Eval(params ...interface{}) (interface{}, error) {	
 	example1 := params[0].(string)
-	example2 := params[1].(string)
-	if example1 == "" || example2 == "" {
+	//example2 := params[1].(string)
+	if example1 == "" {
 		return "", fmt.Errorf("Parameters cannot be empty")
 	}
 	var firstHash hash.Hash
@@ -47,7 +47,7 @@ func (s *hashFunction) Eval(params ...interface{}) (interface{}, error) {
 	if err != nil {
 	log.Fatal("failure to create first Hash:", err)
 	}
-	var secondHash hash.Hash
+	/*var secondHash hash.Hash
 	secondHash = sha256.New()
 	var unmarshaler encoding.BinaryUnmarshaler
 	unmarshaler, ok = secondHash.(encoding.BinaryUnmarshaler)
@@ -56,9 +56,9 @@ func (s *hashFunction) Eval(params ...interface{}) (interface{}, error) {
 	}
 	if err := unmarshaler.UnmarshalBinary(data); err != nil {
 	log.Fatal("failure to create hash:", err)
-	}
+	}*/
 	firstHash.Write([]byte(example2))
-	secondHash.Write([]byte(example2))
+	//secondHash.Write([]byte(example2))
 	fmt.Printf("%x\n", firstHash.Sum(nil))
 	return hex.EncodeToString(firstHash.Sum(nil)),nil
 }
