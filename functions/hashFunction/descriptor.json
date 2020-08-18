@@ -12,10 +12,6 @@
 		"args":[{"name": "example1",
                  "type": "string",
                  "valueType": "string"
-				},
-				{"name": "example2",
-                 "type": "string",
-                 "valueType": "string"
 				}
 		],
 		"return":{"type": "string",
