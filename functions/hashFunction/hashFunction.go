@@ -57,7 +57,7 @@ func (s *hashFunction) Eval(params ...interface{}) (interface{}, error) {
 	if err := unmarshaler.UnmarshalBinary(data); err != nil {
 	log.Fatal("failure to create hash:", err)
 	}*/
-	firstHash.Write([]byte(example2))
+	//firstHash.Write([]byte(example2))
 	//secondHash.Write([]byte(example2))
 	fmt.Printf("%x\n", firstHash.Sum(nil))
 	return hex.EncodeToString(firstHash.Sum(nil)),nil
