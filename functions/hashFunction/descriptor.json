@@ -8,7 +8,7 @@
 	{
 		"name":"hashFunction",
 		"description":"Generate sha256 hash value",
-		"example":"hashFunction(example1,example2)\n Returns a string containing hash value",
+		"example":"hashFunction(example1)\n Returns a string containing hash value",
 		"args":[{"name": "example1",
                  "type": "string",
                  "valueType": "string"
