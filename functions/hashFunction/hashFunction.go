@@ -35,7 +35,7 @@ func (s *hashFunction) Eval(params ...interface{}) (interface{}, error) {
 	var firstHash hash.Hash
 	firstHash = sha256.New()
 	firstHash.Write([]byte(example1))
-	var marshaler encoding.BinaryMarshaler
+	//var marshaler encoding.BinaryMarshaler
 	var ok bool
 	marshaler, ok = firstHash.(encoding.BinaryMarshaler)
 	if !ok {
