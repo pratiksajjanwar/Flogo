@@ -4,9 +4,7 @@ import (
 	"github.com/project-flogo/core/data"
 	"github.com/project-flogo/core/data/expression/function"
 	"crypto/sha256"
-	"encoding"
 	"fmt"
-	"log"
 	"hash"
 	"encoding/hex"
 )
