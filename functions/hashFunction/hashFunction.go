@@ -3,7 +3,7 @@ package stringFunctions
 import (
 	"github.com/project-flogo/core/data"
 	"github.com/project-flogo/core/data/expression/function"
-	"crypto/sha256"
+	"crypto/sha512"
 	"fmt"
 	"hash"
 	"encoding/hex"
@@ -31,7 +31,7 @@ func (s *hashFunction) Eval(params ...interface{}) (interface{}, error) {
 		return "", fmt.Errorf("Parameters cannot be empty")
 	}
 	var firstHash hash.Hash
-	firstHash = sha256.New()
+	firstHash = sha512.New()
 	firstHash.Write([]byte(example1))
 	//var marshaler encoding.BinaryMarshaler
 	//var ok bool
