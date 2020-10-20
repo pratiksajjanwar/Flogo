@@ -15,7 +15,7 @@ type dateFunction struct {
 }
 
 func (s *dateFunction) Name() string {
-	return "datestring"
+	return "dateFunction"
 }
 
 func (s *dateFunction) Sig() (paramTypes []data.Type, isVariadic bool) {
