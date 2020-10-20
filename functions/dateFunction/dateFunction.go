@@ -12,10 +12,10 @@ func init() {
 }
 
 func (s *dateFunction) Name() string {
-	return "date"
+	return "datestring"
 }
 
-func (s *hashFunction) Sig() (paramTypes []data.Type, isVariadic bool) {
+func (s *dateFunction) Sig() (paramTypes []data.Type, isVariadic bool) {
 	return []data.Type{data.TypeString}, false
 }
 
