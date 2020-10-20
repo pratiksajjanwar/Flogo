@@ -8,7 +8,7 @@
 {
 "name":"dateFunction",
 "description":"Returns current date",
-"example":"dateFunction()\n Returns a current date as a string "
+"example":"dateFunction()\n Returns a current date as a string ",
 "args":[
 		{
 		 "name":"current_date",
