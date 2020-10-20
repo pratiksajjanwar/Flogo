@@ -4,11 +4,11 @@ import (
   "time"
 )
 
-type dateFunction struct {
-}
-
 func init() {
 	_ = function.Register(&dateFunction{})
+}
+
+type dateFunction struct {
 }
 
 func (s *dateFunction) Name() string {
