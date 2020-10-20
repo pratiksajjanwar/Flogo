@@ -1,0 +1,27 @@
+{
+"name":"dateFunction",
+"type":"flogo:function",
+"version":"0.0.1",
+"title":"dateFunction",
+"description":"custom date function",
+"functions":[
+{
+"name":"dateFunction",
+"description":"Returns current date",
+"example":"dateFunction()\n Returns a current date as a string "
+"args":[
+		{
+		 "name":"current_date",
+		 "type":"string",
+		 "valueType":"string"
+		}
+],
+"return":{
+"type":"string"
+},
+"display":{
+"visible":true
+}
+}
+]
+}
