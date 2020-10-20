@@ -1,7 +1,6 @@
 package DateFunction
 
 import (
-  "fmt"
   "time"
 )
 
