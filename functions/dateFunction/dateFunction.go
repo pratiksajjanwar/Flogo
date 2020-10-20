@@ -5,7 +5,7 @@ import (
 )
 
 func init() {
-	_ = function.Register(&dateFunction{})
+	function.Register(&dateFunction{})
 }
 
 type dateFunction struct {
