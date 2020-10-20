@@ -22,7 +22,7 @@ func (s *hashFunction) Sig() (paramTypes []data.Type, isVariadic bool) {
 
 func (s *dateFunction) Eval(params ...interface{}) (interface{}, error) {	
 	
-	current_time := time.Now().Local()
+	current_date := time.Now().Local()
 	
-	return current_time,nil
+	return current_date,nil
 }
